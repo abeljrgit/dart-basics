@@ -23,3 +23,11 @@ void someFunctionShowingAssignmentOperators() {
 
   a ??= 34;
 }
+
+void someFunctionShowtingNullSpreadOperator() {
+  var a = [1, 2, 3];
+  var b = null;
+  var c = [...a, ...?b];
+
+  print(c);
+}
