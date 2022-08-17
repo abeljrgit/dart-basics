@@ -6,5 +6,5 @@ import 'package:dart_basics/variable_level.dart' as dart_basics;
 
 void main(List<String> arguments) {
 //
-  someFunctionShowingEnum();
+  someFunctionShowingException();
 }
