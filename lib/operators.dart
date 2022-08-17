@@ -31,3 +31,13 @@ void someFunctionShowtingNullSpreadOperator() {
 
   print(c);
 }
+
+void someFunctionExecutingClassAsAFunction() {
+  var a = SomeCallableClass();
+  a();
+  a.call();
+}
+
+class SomeCallableClass {
+  void call() => print("I'm a function! :)");
+}

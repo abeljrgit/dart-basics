@@ -51,3 +51,23 @@ void someFunctionShowingControlFlow() {
     print("always execute no matter what");
   }
 }
+
+enum WeatherCondition { sunny, cloudy, drizzly, rainy }
+
+void someFunctionShowingEnum() {
+  var condition = WeatherCondition.drizzly;
+  print(condition);
+  switch (condition) {
+    case WeatherCondition.cloudy:
+      print("cloudy");
+      break;
+    case WeatherCondition.drizzly:
+    case WeatherCondition.rainy:
+      print("rainy");
+      break;
+    case WeatherCondition.sunny:
+      print("sunny");
+      break;
+    default:
+  }
+}
